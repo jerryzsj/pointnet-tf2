@@ -2,6 +2,9 @@
 
 Author: Charles R. Qi
 Date: November 2016
+
+Modified by: Senjing Zheng
+Date: January 2020
 """
 
 import numpy as np

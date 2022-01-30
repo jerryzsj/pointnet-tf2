@@ -1,3 +1,8 @@
+'''
+Code developed by Senjing Zheng (senjing.zheng@gmail.com)
+'''
+
+
 import os
 import sys
 import numpy as np

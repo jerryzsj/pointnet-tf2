@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 '''
-Code developed by Senjing Zheng (senjing.zheng[at]gmail.com)
+Code developed by Senjing Zheng (senjing.zheng@gmail.com)
 '''
 
 import os
