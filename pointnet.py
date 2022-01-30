@@ -489,7 +489,7 @@ def train_one_epoch(sess, ops, train_writer, data_idx=None):
     TRAIN_AVG_CLASS_ACC_FOUT.flush()
 
     # log out train log
-    TRAIN_LOG_FOUT.write('%f %f %f\n' % (train_mean_loss, train_ovarall_acc, train_avg_class_acc))
+    TRAIN_LOG_FOUT.write('%f %f\n' % (train_ovarall_acc, train_avg_class_acc))
     TRAIN_LOG_FOUT.flush()
 
     log_string(LOG_FOUT,'train mean loss: %f' % train_mean_loss)
@@ -633,7 +633,7 @@ def validate_one_epoch(sess, ops, test_writer, epoch_idx):
     avg_class_acc = np.mean(total_correct_class/total_seen_class)
 
     # log out validate log
-    VAL_LOSS_FOUT.write('%f\n' % (train_mean_loss))
+    VAL_LOSS_FOUT.write('%f\n' % (validate_mean_loss))
     VAL_LOSS_FOUT.flush()
     VAL_LOG_FOUT.write('%f %f\n' % (total_acc, avg_class_acc))
     VAL_LOG_FOUT.flush()
