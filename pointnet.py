@@ -40,7 +40,7 @@ from email_utils import send_an_email
 LOG_BASE_DIR = os.path.join(PROJECT_DIR, 'log')
 if not os.path.exists(LOG_BASE_DIR): os.makedirs(LOG_BASE_DIR)
 
-DUMP_BASE_DIR = os.path.join(BASE_DIR, 'dump')
+DUMP_BASE_DIR = os.path.join(PROJECT_DIR, 'dump')
 if not os.path.exists(DUMP_BASE_DIR): os.makedirs(DUMP_BASE_DIR)
 
 #Global variables/parameters
