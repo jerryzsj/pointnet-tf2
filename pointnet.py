@@ -591,8 +591,8 @@ def validate_one_epoch(sess, ops, test_writer, epoch_idx):
         end_idx = (batch_idx+1) * BATCH_SIZE
 
         feed_idx = data_idx[start_idx:end_idx]
-        feed_data = TEST_DATA[feed_idx, :, :]
-        feed_label = TEST_LABEL[feed_idx]
+        feed_data = TRAIN_DATA[feed_idx, :, :]
+        feed_label = TRAIN_LABEL[feed_idx]
 
         feed_dict = {ops['pointclouds_pl']: feed_data,
                      ops['labels_pl']: feed_label,
