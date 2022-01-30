@@ -230,7 +230,7 @@ print('Test data shape:',TEST_DATA.shape)
 LOG_BASE_DIR = os.path.join(LOG_BASE_DIR, EXP_NAME)
 LOG_BASE_DIR = os.path.join(LOG_BASE_DIR, 'log_train')
 if not os.path.exists(LOG_BASE_DIR): os.makedirs(LOG_BASE_DIR)
-copyfile(os.path.abspath(__file__), os.path.join(LOG_BASE_DIR, 'train_colab.py'))
+copyfile(os.path.abspath(__file__), os.path.join(LOG_BASE_DIR, 'train.py'))
 
 DUMP_BASE_DIR = os.path.join(DUMP_BASE_DIR, EXP_NAME)
 if not os.path.exists(DUMP_BASE_DIR): os.makedirs(DUMP_BASE_DIR)
